@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarinGo - Help Us Build the Future of Maritime Document Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 3em;
+            font-weight: bold;
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .cta-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+            margin: 10px;
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,107,53,0.4);
+        }
+        
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .problem-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        .benefits {
+            background: #e8f5e8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .survey-info {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .testimonial {
+            font-style: italic;
+            background: #f1f3f4;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .language-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ff6b35;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 20px;
+            }
+            
+            .logo {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switch">
+        <button onclick="toggleLanguage()">🇮🇹 Italiano</button>
+    </div>
+
+    <div class="container">
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <div class="logo">⚓ MarinGo</div>
+            <div class="tagline">The Future of Maritime Document Management</div>
+            <p style="font-size: 1.1em; margin-bottom: 25px;">
+                We're developing an app to revolutionize how seafarers manage their personal documents. 
+                <strong>Your input will shape the final product!</strong>
+            </p>
+            <a href="#survey" class="cta-primary">📋 Take the 3-Minute Survey</a>
+            <a href="#about" class="cta-primary" style="background: #1e3c72;">🤔 Learn More</a>
+        </div>
+
+        <!-- PROBLEM SECTION -->
+        <div class="section" id="about">
+            <h2>❗ The Problem Every Seafarer Faces</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3>📅 Expiration Tracking</h3>
+                    <p>Keeping track of STCW, medical certificates, passports, visas, and endorsements manually</p>
+                </div>
+                <div class="problem-card">
+                    <h3>📁 Document Chaos</h3>
+                    <p>Photos scattered in phone, physical copies lost, scanned files in different folders</p>
+                </div>
+                <div class="problem-card">
+                    <h3>🚢 Boarding Delays</h3>
+                    <p>Missing or expired documents causing last-minute delays and missed assignments</p>
+                </div>
+                <div class="problem-card">
+                    <h3>🎓 Training Centers</h3>
+                    <p>Difficulty finding certified training centers nearby for renewals and upgrades</p>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <p><em>"I once missed a contract because my STCW Basic Safety expired and I didn't realize it. Cost me €3,000 and 2 months of work."</em></p>
+                <p style="text-align: right; margin-top: 10px;"><strong>- Chief Engineer, Container Vessels</strong></p>
+            </div>
+        </div>
+
+        <!-- SOLUTION SECTION -->
+        <div class="section">
+            <h2>💡 Our Proposed Solution: MarinGo</h2>
+            <div class="benefits">
+                <h3>🎯 What MarinGo Would Do:</h3>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>📱 Smart Document Recognition:</strong> Scan any maritime document, app recognizes it automatically</li>
+                    <li><strong>⏰ Proactive Alerts:</strong> Get notified 3 months before ANY document expires</li>
+                    <li><strong>🗺️ Training Center Locator:</strong> Find certified training centers anywhere in the world</li>
+                    <li><strong>📡 Works Offline:</strong> Access your documents even without internet</li>
+                    <li><strong>☁️ Secure Backup:</strong> Never lose important documents again</li>
+                    <li><strong>🚢 AIS Integration:</strong> Live ship tracking and maritime news</li>
+                </ul>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">1.9M</div>
+                    <div>Seafarers Worldwide</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">15+</div>
+                    <div>Different Documents to Track</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">€2.9B</div>
+                    <div>Maritime Software Market</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SURVEY SECTION -->
+        <div class="section" id="survey">
+            <h2>🙋‍♂️ We Need YOUR Input!</h2>
+            <div class="survey-info">
+                <h3>📊 Help Us Build What You Actually Need</h3>
+                <p><strong>The survey takes just 3-4 minutes</strong> and will help us understand:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>How you currently manage documents</li>
+                    <li>What problems you face most often</li>
+                    <li>What features would be most valuable</li>
+                    <li>How much you'd pay for a solution</li>
+                </ul>
+            </div>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="INSERISCI_QUI_LINK_GOOGLE_FORMS" class="cta-primary" style="font-size: 1.3em; padding: 20px 50px;" onclick="trackSurveyClick()">
+                    🚀 START SURVEY NOW
+                </a>
+            </div>
+            
+            <div class="benefits">
+                <h3>🎁 What's In It For You:</h3>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>📈 Survey Results:</strong> Get the final report with industry insights</li>
+                    <li><strong>🆓 Free Early Access:</strong> Be first to test the app (if we build it)</li>
+                    <li><strong>💬 Your Voice Heard:</strong> Shape a product that solves real problems</li>
+                    <li><strong>🎯 Industry Impact:</strong> Help improve life for all seafarers</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TEAM SECTION -->
+        <div class="section">
+            <h2>👥 Who We Are</h2>
+            <p>We're a team of developers and maritime industry experts passionate about solving real problems with technology. This isn't just another app idea - we're committed to building something that actually helps seafarers succeed.</p>
+            
+            <p style="margin-top: 15px;"><strong>Our Promise:</strong> We'll share all survey results with participants and only proceed with development if there's genuine demand.</p>
+            
+            <div style="text-align: center; margin-top: 25px;">
+                <p>Questions? Email us: <strong>hello@maringo-app.com</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 MarinGo Research Project. Made with ❤️ for the maritime community.</p>
+    </div>
+
+    <!-- Google tag (gtag.js) - SOSTITUISCI CON IL TUO ID ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID'); // SOSTITUISCI QUI
+        
+        function toggleLanguage() {
+            alert("Versione italiana in arrivo! / Italian version coming soon!");
+        }
+        
+        // Track survey clicks
+        function trackSurveyClick() {
+            gtag('event', 'click', {
+                'event_category': 'Survey',
+                'event_label': 'Main CTA'
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
